@@ -47,6 +47,22 @@ ping 192.86.121.3
 <br />
 <br />
 <br />
+Run nmap scan to look for open ports: <br/>
+<br/>
+- We can see that port 445, also known as SMB, is open. 
+<br/>
+<br/>
+Command: nmap 192.86.121.3
+<br/>
+<br/>
+<img src="https://i.imgur.com/E5yXhP6.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
