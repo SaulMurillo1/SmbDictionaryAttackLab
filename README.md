@@ -63,9 +63,11 @@ Command: nmap 192.86.121.3
 <br />
 <br />
 <br />
-Use the msfconsole tool (metasploit) run a login bruteforce attack on the SMB server: <br/>
+Use the msfconsole tool (metasploit) to run a login bruteforce attack on the SMB server: <br/>
 <br/>
-- We . 
+- In this scenario, we already know that there is a user Jane so we will try to use the metasploit smb_login module with a password wordlist to try and find Jane's password. 
+<br/>
+- We can see that by using a password wordlist, we were able to find a match for user Jane's password, which is abc123. This is one reason why it is bad practice to use small straightforward passwords.
 <br/>
 <br/>
 Commands: msfconsole
