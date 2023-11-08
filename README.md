@@ -63,7 +63,7 @@ Command: nmap 192.86.121.3
 <br />
 <br />
 <br />
-Use the msfconsole tool (metasploit) to run a login bruteforce attack on the SMB server: <br/>
+Use the msfconsole tool (metasploit) to run a login brute force attack on the SMB server user Jane: <br/>
 <br/>
 - In this scenario, we already know that there is a user Jane so we will try to use the metasploit smb_login module with a password wordlist to try and find Jane's password. 
 <br/>
@@ -90,6 +90,26 @@ exploit
 <img src="https://i.imgur.com/MSLfZtm.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
 <br />
 <img src="https://i.imgur.com/Oj2hjIe.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Use the hydra tool to run a brute force attack and try to enumerate the user admin's password: <br/>
+<br/>
+- Hydra is an open source, password brute-forcing tool designed around flexibility and high performance in online brute-force attacks. 
+<br/>
+- As we can see in the command below, I used the hydra tool to brute force the password for the user admin. First, I used gzip to unzip the wordlist I planned on using for the attack.  Then, I used the popular rockyou.txt wordlist to conduct the brute force attack.  I was able to get a valid password for user admin, which was password1. 
+<br/>
+<br/>
+Commands: gzip -d /usr/share/wordlists/rockyou.txt.gz
+<br/>
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.86.121.3 smb
+<br/>
+<br/>
+<img src="https://i.imgur.com/fVUOy7c.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
 <br />
 <br />
 <br />
