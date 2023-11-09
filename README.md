@@ -133,6 +133,22 @@ Command: smbmap -H 192.86.121.3 -u admin -p password1
 <br />
 <br />
 <br />
+User Jane's password (abc123) is known from one of the prior steps above. Now use the smbclient tool to verify if the share Jane is browseable: <br/>
+<br/>
+- We can see that the share jane is not listed, which means it is not browseable. 
+<br/>
+<br/>
+Command: smbclient -L 192.86.121.3 -U jane
+<br/>
+<br/>
+<img src="https://i.imgur.com/hyvQSnk.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
