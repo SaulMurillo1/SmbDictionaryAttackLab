@@ -165,6 +165,37 @@ Command: smbclient //192.86.121.3/jane -U jane
 <br />
 <br />
 <br />
+Obtain and concatenate (cat) the flag that was found in the share "jane": <br/>
+<br/>
+- It looks like there was a directory named flag with a file named flag in the directory. I can use the get command to retrieve the flag and exit the smb server, then use the cat (concatenate) command to be able to read the flag.
+<br/>
+<br/>
+Commands: smbclient //192.86.121.3/jane -U jane
+<br/>
+ls
+<br/>
+cd flag
+<br/>
+ls
+<br/>
+get flag
+<br/>
+exit
+<br/>
+<br/>
+ls
+<br/>
+cat flag
+<br/>
+<br/>
+<img src="https://i.imgur.com/KzIzy6S.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
