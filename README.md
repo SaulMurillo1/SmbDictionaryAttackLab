@@ -117,6 +117,22 @@ hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.86.121.3 smb
 <br />
 <br />
 <br />
+Now that user admin's password is known, use smbmap tool to enumerate user shares & permissions: <br/>
+<br/>
+- We can see that the nancy share is read only while the admin and shawn shares are read, write. 
+<br/>
+<br/>
+Command: smbmap -H 192.86.121.3 -u admin -p password1
+<br/>
+<br/>
+<img src="https://i.imgur.com/ijAWuWq.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
