@@ -196,6 +196,41 @@ cat flag
 <br />
 <br />
 <br />
+Since a flag was found in the "jane" share, verify if the "admin" has a flag as well: <br/>
+<br/>
+- I already have found the password for the "admin" share which is password1. I will use the smbclient tool to login into the "admin" share and perform a ls command to see what directories it has.
+<br/>
+- It looks like it has a directory called hidden. Inside the hidden directory there is a file called flag.tar.gz which I will retrieve by using the get command. Next, I have to extract the flag from the tar.gz file by using the tar -xf flag.tar.gz command. Now we can see that I am able to use the cat command to read the flag.
+<br/>
+<br/>
+Commands: smbclient //192.86.121.3/admin -U admin
+<br/>
+ls
+<br/>
+cd hidden
+<br/>
+ls
+<br/>
+get flag.tar.gz
+<br/>
+exit
+<br/>
+<br/>
+tar -xf flag.tar.gz
+<br/>
+ls
+<br/>
+cat flag
+<br/>
+<br/>
+<img src="https://i.imgur.com/XddhQIi.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
