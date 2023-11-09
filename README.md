@@ -151,7 +151,7 @@ Command: smbclient -L 192.86.121.3 -U jane
 <br />
 Check if the share jane actually exists: <br/>
 <br/>
-- We can see that I was able to log into the share "jane" and run a ls (list items in directory) command successfully. We can verify that the share jane does exist, but it is not browseable.
+- We can see that I was able to log into the share "jane" and run a ls (list items in directory) command successfully. We can verify that the share jane does exist. It also looks like there is a flag directory that we can try to access in the next step.
 <br/>
 <br/>
 Command: smbclient //192.86.121.3/jane -U jane
