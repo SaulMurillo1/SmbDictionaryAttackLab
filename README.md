@@ -149,6 +149,22 @@ Command: smbclient -L 192.86.121.3 -U jane
 <br />
 <br />
 <br />
+Check if the share jane actually exists: <br/>
+<br/>
+- We can see that I was able to log into the share "jane" and run a ls (list items in directory) command successfully. We can verify that the share jane does exist, but it is not browseable.
+<br/>
+<br/>
+Command: smbclient //192.86.121.3/jane -U jane
+<br/>
+<br/>
+<img src="https://i.imgur.com/YStmvR3.png" height="80%" width="80%" alt="SMB Nmap Scripting" class="center"/>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
