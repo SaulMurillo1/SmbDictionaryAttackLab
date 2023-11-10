@@ -5,7 +5,7 @@
 This project consists of using known wordlists to conduct a dictionary attack on an SMB server. 
 <br />
 <br />
-- A wordlist file is a list on common or bad passwords which can be used for brute force or dictionary attacks. A famous wordlist is the rockyou.txt wordlist, which contains over 14 million passwords that were leaked in past data breaches. I will provide examples of using different Kali Linux tools to conduct dictionary attacks. 
+- A wordlist file is a list of common or bad passwords which can be used for brute force or dictionary attacks. A famous wordlist is the rockyou.txt wordlist, which contains over 14 million passwords that were leaked in past data breaches. I will provide examples of using different Kali Linux tools to conduct dictionary attacks. 
 <br />
 <br />
 
