@@ -31,7 +31,7 @@ Disclaimer: The Kali Linux user machine and target machine used in this project 
 <p align="left">
 Ping target machine to verify that it is active: <br/>
 <br/>
-- INE has provided me with Kali Linux GUI & target machine (target machine is one ip address above from mine).  I will run and ip a command to verify my own ip address. 
+- INE has provided me with Kali Linux GUI & target machine (target machine is one ip address above from mine).  I will run an ip a command to verify my own ip address. 
 <br/>
 <br/>
 Commands: ip a
